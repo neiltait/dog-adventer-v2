@@ -143,6 +143,9 @@ function stratlevel () {
         heart.startEffect(effects.trail)
     }
 }
+function Show_Menu () {
+    game.splash("Bonnie, a cute golden retriver is LOST! Help her get back to her family! If you need a tutorial, press B to go to menu. If not, press A.")
+}
 sprites.onOverlap(SpriteKind.Player, SpriteKind.fireball, function (sprite, otherSprite) {
     info.changeLifeBy(-2)
     otherSprite.destroy()
